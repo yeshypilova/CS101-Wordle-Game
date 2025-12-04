@@ -35,7 +35,7 @@ while now_attempt < attempts:
     print( " ".join(result), "\n")
 
     if guess == hidden_word:
-        print(f"Ви вгадали наше слово {Fore.GREEN + hidden_word.upper()} за {now_attempt} спроб(и)!")
+        print(f"Ви вгадали наше слово {Fore.GREEN + hidden_word.upper() + Style.RESET_ALL} за {now_attempt} спроб(и)!")
         break
 else:
     print(f"На жаль, ви не вгадали слово. Ми загадали слово: {hidden_word.upper()}")
